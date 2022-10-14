@@ -2,7 +2,7 @@
   "name": "filmoteka-sign-in",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://BulatovaTati.github.io/my__filmoteka",
+  "homepage": "https://yaroslavtaranovskiy.github.io/filmoteka-sign-in/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /filmoteka-sign-in/"

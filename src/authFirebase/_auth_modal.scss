@@ -1,0 +1,59 @@
+.button.button-auth-modal-btn {
+    width: 110px;
+    height: 44px;
+
+    transition: color getProperty(time) getProperty(cubic),
+        background-color getProperty(time) getProperty(cubic),
+        border-color getProperty(time) getProperty(cubic);
+
+    @media screen and (max-width: getSize(wmobile)) {
+        padding: 1px 4px;
+    }
+
+    @include lh(16px, 12px, 12px);
+    text-transform: uppercase;
+
+    color: #000;
+    border-color: #000;
+
+    cursor: pointer;
+
+    @media screen and (min-width: getSize(tablet)) {
+        width: 125px;
+    }
+
+    @media screen and (min-width: getSize(desktop)) {
+        width: 136px;
+    }
+
+    &:hover {
+        background-color: getColor(accent-text-color);
+        border-color: transparent;
+        color: getColor(white-text-color);
+    }
+}
+
+.modal-close__btn {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    background-color: getColor(white-text-color);
+    border: 1px solid getColor(footer-text-color);
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    transition: border-color getProperty(time) getProperty(cubic);
+
+    &:hover,
+    &:focus {
+        border: 1px solid getColor(current-page);
+    }
+}
