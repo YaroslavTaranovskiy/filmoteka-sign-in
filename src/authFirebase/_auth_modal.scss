@@ -1,6 +1,6 @@
 .button.button-auth-modal-btn {
-    width: 110px;
-    height: 44px;
+    width: 100px;
+    height: 40px;
 
     transition: color getProperty(time) getProperty(cubic),
         background-color getProperty(time) getProperty(cubic),
@@ -10,7 +10,7 @@
         padding: 1px 4px;
     }
 
-    @include lh(16px, 12px, 12px);
+    @include lh(16px, 18px, 18px);
     text-transform: uppercase;
 
     color: #000;
@@ -56,4 +56,34 @@
     &:focus {
         border: 1px solid getColor(current-page);
     }
+}
+
+.auth__wrapper {
+    width: 600px;
+    max-width: 95vw;
+    border-radius: 20px;
+}
+
+.auth-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.auth-modal {
+    margin-top: 20px;
+    
+}
+
+.input-area-email {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input-area-password {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.label-email{
+    margin-right: 30px;
 }

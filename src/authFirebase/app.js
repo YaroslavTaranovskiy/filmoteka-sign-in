@@ -1,3 +1,5 @@
+import { authWithEmailAndPassword } from './auth'
+
 const authModalOpenBtn = document.getElementById('auth-open-modal');
 
 
@@ -7,15 +9,15 @@ function getAuthForm() {
     return `
          <button class="modal-close__btn" data-close-modal__window>
                 <svg width="20" height="20" class="swiper__icon">
-                    <use href="./images/sprite.svg#icon-close"></use>
+                    <use href="../images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
             <form class="auth-modal" id="auth-form">
-                <div class="input-area">
-                    <label for="email">E-mail</label>
+                <div class="input-area-email">
+                    <label for="email" class="label-email">E-mail</label>
                     <input type="text" id="email">
                 </div>
-                <div class="input-area">
+                <div class="input-area-password">
                     <label for="password">Password</label>
                     <input type="text" id="password">
                 </div>
@@ -35,10 +37,19 @@ function createModal(title, content) {
     `
 }
 
+function authFormHandler(event) {
+    event.preventDefault()
+
+    const email = event.target.querySelector('#email').value
+    const password = event.target.querySelector('#password').value
+
+    authWithEmailAndPassword(email, password)
+}
+
 function openModal() {
     createModal('Sign in to your account', getAuthForm())
     document
-        .getElementById('auth-form')
+        .getElementById('auth-modal')
         .addEventListener('submit', authFormHandler)
     
 }

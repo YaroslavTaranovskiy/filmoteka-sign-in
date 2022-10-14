@@ -16,9 +16,9 @@ export function authWithEmailAndPassword(email, password) {
   )
     .then(r => {
       if (r.ok) {
-        return alert('pruvi zdarov');
+        return alert('Enjoy watching movies. Grab more popcorn and snacks.');
       } else {
-        throw new Error(`email is not def`);
+        throw new Error(`Email or Password is wrong`);
       }
     })
     .catch(e => alert(e));

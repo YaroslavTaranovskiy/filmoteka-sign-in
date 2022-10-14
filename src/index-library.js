@@ -13,3 +13,6 @@ import './js/dom/scrollToTop';
 import './js/other/other-index';
 import './js/dom/modal-movie';
 import './js/dom/trailer';
+
+// auth form
+import './authFirebase/auth-done';
