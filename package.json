@@ -1,18 +1,18 @@
 {
-  "name": "my__filmoteka",
+  "name": "filmoteka-sign-in",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://BulatovaTati.github.io/my__filmoteka",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /my__filmoteka/"
+    "build": "parcel build src/*.html --public-url /filmoteka-sign-in/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BulatovaTati/my__filmoteka.git"
+    "url": "https://github.com/YaroslavTaranovskiy/filmoteka-sign-in"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Yaroslav Taranovskiy",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^1.0.0",
     "basiclightbox": "^5.0.4",
+    "firebase": "^9.12.1",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
     "modern-normalize": "^1.1.0",
