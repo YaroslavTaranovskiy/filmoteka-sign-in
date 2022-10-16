@@ -1,14 +1,26 @@
 <div class="alert__mеssаge container visually-hidden">
   <span class="sorry"> Sorry :(</span>
+  <p class="string__alert">No movies have been added yet</p>
   <div class="auth-container">
-    <button type="button" class="button button-auth-modal-btn" id="auth-open-modal" data-open-modal__window>
+    <button type="button" 
+    class="button button-auth-modal-btn js-open-modal" 
+    id="auth-open-modal" 
+    data-modal="sign_in"
+    data-open-modal__window>
       Sign in
     </button>
-    <div class="overlay is-open-modal" data-modal__window>
-      <div class="modal auth__wrapper" id="auth-modal">
-  
+    <button type="button" 
+    class="button button-auth-modal-btn js-open-modal" 
+    id="log-open-modal" 
+    data-modal="log_in"
+    data-open-modal__window>
+      Log in
+    </button>
+    <div class="overlay-login is-open-modal js-overlay-modal" data-modal__window>
+      <div class="modal-login auth__wrapper" id="auth-modal" data-modal="sign_in">
+      </div>
+      <div class="modal-login auth__wrapper" id="login-modal" data-modal="log_in">
       </div>
     </div>
   </div>
-  <p class="string__alert">No movies have been added yet</p>
 </div>
